@@ -55,6 +55,16 @@ header {
     height: 200px;
 }
 
+#contact {
+    height: 625px;
+    background-color: khaki;
+}
+
+.map {
+    height: 189px;
+    background-color: lightblue;
+}
+
 
 
 
