@@ -4,3 +4,35 @@
 font-family: 'Oxygen', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: aqua;
+    width: 100vw;
+    height: 480px;
+}
+
+#article {
+    background-color: forestgreen;
+    height: 1110px;
+}
+
+#texte {
+    background-color: rgb(98, 180, 98);
+    height: 240px;
+}
+
+#about {
+    background-color: rgb(95, 117, 95);
+    height: 240px;
+}
