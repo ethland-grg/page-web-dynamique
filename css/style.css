@@ -34,7 +34,7 @@ header {
 
 #about {
     /*background-color: black;*/
-    background-image: url('/images/33.jpg');
+    background-image: url('/images/background-about.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -46,7 +46,7 @@ header {
 
 #map {
     height: 100%;
-    background: url('/ressources/black.jpg') no-repeat center;
+    background: url('/images/black.jpg') no-repeat center;
 }
 
 #contact i {
