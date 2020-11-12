@@ -57,6 +57,9 @@ header {
 
 footer {
     background-image: url('/images/background-footer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 #footer-link a {
@@ -68,6 +71,24 @@ footer {
     text-align: center;
 }
 
+/********* FORMULAIRE *********/
+
+#form form{
+    background-color: white;
+    position: fixed;
+    bottom: -640px;
+    z-index: 998;
+    width: 360px;
+    height: 100vh;
+    letter-spacing: 0.1em;
+    transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+    padding: 0 2em;
+}
+
+.active {
+    bottom: 0px!important;
+}
+
 /********* MEDIA QUERIES *********/
 
 @media (min-width: 1024px) {
@@ -77,6 +98,8 @@ footer {
     }
     #info {
         background-color: transparent!important;
+        position: relative;
+        top: -5em;
     }
 }
 

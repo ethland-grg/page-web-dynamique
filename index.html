@@ -21,11 +21,11 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
 
-    <!-- API GOOGLE MAPS -->
+    <!-- API GOOGLE MAPS 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQch61-2GzOIJZGEn4xmGJMpprTFDOZj8&callback=initMap"
-        defer></script>
-
+        defer></script>-->
+    
     <!-- MON CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -60,7 +60,7 @@
                         </li>
                     </ul>
                     <div style="color: white;">
-                        
+
                         <p class="h4">0692 12 34 56</p>
                     </div>
                 </div>
@@ -107,9 +107,9 @@
                     </div>
                 </div>
             </div>
-            
-                
-            
+
+
+
         </div>
     </section>
     <!-------------------------- INFO -------------------------->
@@ -124,22 +124,25 @@
     <section id="about" class="padding_section">
         <div class="container h-100 text-white d-md-flex flex-md-column justify-content-md-around">
             <h1>a propos</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed malesuada ex. Nam nisl diam,<br/>accumsan
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed malesuada ex. Nam nisl
+                diam,<br />accumsan
                 ut dignissim vitae, consectetur non velit. Aenean semper mauris nec dui laoreet maximus. Aliquam.</p>
-            <button type="button" class="btn btn-light col-md-2">contactez-moi</button>
+            <button type="button" class="btn btn-light col-md-2" id="contact-about">contactez-moi</button>
         </div>
     </section>
     <!-------------------------- FORMULAIRE -------------------------->
-    <section id="form" class="d-none">
-        <div class="container">
+    <section id="form">
+        <div class="container h-100 w-100 d-flex justify-content-center">
             <form>
                 <div class="form-group">
                     <label for="last-name">nom</label>
-                    <input class="form-control" type="text" placeholder="nom" id="last-name" required pattern="/^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/">
+                    <input class="form-control" type="text" placeholder="nom" id="last-name" required
+                        pattern="[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$">
                 </div>
                 <div class="form-group">
                     <label for="first-name">prénom</label>
-                    <input class="form-control" type="text" placeholder="prénom" id="first-name" required pattern="/^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/">
+                    <input class="form-control" type="text" placeholder="prénom" id="first-name" required
+                        pattern="[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$">
                 </div>
                 <div class="form-group">
                     <label for="email">email</label>
@@ -147,13 +150,18 @@
                 </div>
                 <div class="form-group">
                     <label for="object">objet</label>
-                    <input class="form-control" type="text" placeholder="objet">
+                    <input class="form-control" type="text" placeholder="objet" pattern="[A-Za-z]{1,20}">
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" rows="3" id="message"></textarea>
+                    <textarea class="form-control" rows="3" placeholder="message" id="message"></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                    </div>
                 </div>
+                <div class="text-center">
                 <button type="submit" class="btn btn-dark" id="submit">envoyer</button>
+            </div>
             </form>
         </div>
     </section>
@@ -207,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <!-------------------------- CONTACT -------------------------->
@@ -243,7 +251,7 @@
                         <input type="email" class="form-control" id="exampleFormControlInput1"
                             placeholder="name@example.com">
                     </div>
-                    <button type="submit" class="btn btn-dark">s'inscrire</button>
+                    <button type="submit" class="btn btn-dark" id="subscribe">s'inscrire</button>
                 </div>
             </div>
         </div>
@@ -278,6 +286,7 @@
 
     <!-- MON JAVASCRIPT -->
     <script src="/js/script.js"></script>
+
 </body>
 
 </html>

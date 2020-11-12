@@ -12,9 +12,22 @@ formValid.addEventListener('click', validation);
         //Si le champ est vide
         if (lastName.validity.valueMissing || message.validity.valueMissing){
             event.preventDefault();
+            message.classList.add('is-invalid');
         //Si le format de données est incorrect
         } else if (nameValid.test(lastName.value) == false || nameValid.test(firstName.value) == false) {
             event.preventDefault();
         } else { 
         }
     }
+
+$( document ).ready(function() {
+
+    $("#contact-about").click(function() {
+        $("form").addClass("active");
+    });
+
+    $("#submit").click(function() {
+        $("form").removeClass("active");
+    });
+    
+});
