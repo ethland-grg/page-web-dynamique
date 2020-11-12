@@ -56,6 +56,7 @@ header {
 #footer-link a {
     font-size: 0.7em;
     color: black;
+    
 }
 
 #newsletters input::placeholder {
@@ -67,7 +68,9 @@ header {
 
 /********* CSS LANDRY *********/
 
-
+.couleur{
+    background-color: gray;
+}
 
 
 
