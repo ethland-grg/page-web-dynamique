@@ -38,6 +38,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 300px;
 }
 
 #testimonials ul {
@@ -68,6 +69,16 @@ footer {
 }
 
 /********* MEDIA QUERIES *********/
+
+@media (min-width: 1024px) {
+    #card {
+        position: relative;
+        top: -6em;
+    }
+    #info {
+        background-color: transparent!important;
+    }
+}
 
 
 /********* CSS LANDRY *********/
