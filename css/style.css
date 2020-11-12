@@ -1,81 +1,76 @@
-@metacharset "utf-8";
+@charset "utf-8";
 
 /*
 font-family: 'Oxygen', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 */
-/*
-* {
-    padding: 0;
-    margin: 0;
-}
-*/
+
 body {
     font-family: 'Oxygen', sans-serif;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.padding_section {
+    padding: 1.25em 0em;
 }
 
 header {
-    background-color: aqua;
-    width: 100vw;
-    height: 480px;
+    height: 100vh;
+    background: url('/ressources/02.jpg') no-repeat center;
+    /*background-size: cover;*/
 }
 
-#article {
-    background-color: forestgreen;
-    height: 1110px;
+#header a {
+    color: white;
 }
 
-#article img {
-    background-color: gray;
-    height: 270px;
-}
-
-#article .card-body {
-    height: 100px;
-}
-
-#texte {
-    background-color: rgb(98, 180, 98);
-    height: 240px;
+#jumbotron .container{
+    background-color: rgba(0, 0, 0, 0.2)!important;
 }
 
 #about {
-    background-color: rgb(95, 117, 95);
-    height: 240px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-#testimonials {
-    background-color: rgb(98, 180, 98);
-    height: 530px;
-}
-.service {
-    background-color: gray;
-    height: 200px;
+#testimonials ul {
+    padding-left: 1.063em;
 }
 
-#contact {
-    height: 625px;
-    background-color: khaki;
+#map {
+    height: 100%;
+    background: url('/ressources/black.jpg') no-repeat center;
 }
 
-.map {
-    height: 189px;
-    background-color: lightblue;
+#contact i {
+    font-size: 2em;
+    padding: 0 0.5em;
 }
 
-
-
-
-
-/*************** CSS LANDRY ****************/
-
-.space{
-    margin-left: 2em;
-    margin-right: 2em;
-    
+#footer-link a {
+    font-size: 0.7em;
+    color: black;
 }
+
+#newsletters input::placeholder {
+    text-align: center;
+}
+
+/********* MEDIA QUERIES *********/
+
+
+/********* CSS LANDRY *********/
+
+
+
+
+
 
 
 
