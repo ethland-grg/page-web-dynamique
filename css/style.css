@@ -35,3 +35,10 @@ header {
 #jumbotron {
     background-color: rgba(0, 0, 0, 0.3)!important;
 }
+
+#about {
+    background-image: url('/images/background-about.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
