@@ -61,7 +61,7 @@
                     </ul>
                     <div style="color: white;">
                         
-                        <ul>0692 12 34 56</ul>
+                        <p class="h4">0692 12 34 56</p>
                     </div>
                 </div>
             </nav>
@@ -122,24 +122,24 @@
     </section>
     <!-------------------------- ABOUT -------------------------->
     <section id="about" class="padding_section">
-        <div class="container text-white">
+        <div class="container h-100 text-white d-md-flex flex-md-column justify-content-md-around">
             <h1>a propos</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed malesuada ex. Nam nisl diam, accumsan
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed malesuada ex. Nam nisl diam,<br/>accumsan
                 ut dignissim vitae, consectetur non velit. Aenean semper mauris nec dui laoreet maximus. Aliquam.</p>
-            <button type="button" class="btn btn-light">contactez-moi</button>
+            <button type="button" class="btn btn-light col-md-2">contactez-moi</button>
         </div>
     </section>
     <!-------------------------- FORMULAIRE -------------------------->
-    <section id="form" class="d-block">
+    <section id="form" class="d-none">
         <div class="container">
             <form>
                 <div class="form-group">
                     <label for="last-name">nom</label>
-                    <input class="form-control" type="text" placeholder="nom" required>
+                    <input class="form-control" type="text" placeholder="nom" id="last-name" required pattern="/^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/">
                 </div>
                 <div class="form-group">
                     <label for="first-name">prénom</label>
-                    <input class="form-control" type="text" placeholder="prénom" required>
+                    <input class="form-control" type="text" placeholder="prénom" id="first-name" required pattern="/^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/">
                 </div>
                 <div class="form-group">
                     <label for="email">email</label>
@@ -151,9 +151,9 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" rows="3"></textarea>
+                    <textarea class="form-control" rows="3" id="message"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" id="submit">envoyer</button>
+                <button type="submit" class="btn btn-dark" id="submit">envoyer</button>
             </form>
         </div>
     </section>
