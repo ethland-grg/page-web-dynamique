@@ -101,10 +101,16 @@ footer {
         position: relative;
         top: -5em;
     }
+
+    #form form {
+        bottom: -1000px;
+        height: 600px;
+    }
+
+    .active {
+        bottom: 100px!important;
+    }
 }
-
-
-/********* CSS LANDRY *********/
 
 
 
