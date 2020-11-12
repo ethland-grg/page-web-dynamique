@@ -126,16 +126,16 @@
         </div>
     </section>
     <!-------------------------- FORMULAIRE -------------------------->
-    <section id="form" class="d-block">
+    <section id="form" class="d-none">
         <div class="container">
             <form>
                 <div class="form-group">
                     <label for="last-name">nom</label>
-                    <input class="form-control" type="text" placeholder="nom" required>
+                    <input class="form-control" type="text" placeholder="nom" id="last-name" required pattern="/^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/">
                 </div>
                 <div class="form-group">
                     <label for="first-name">prénom</label>
-                    <input class="form-control" type="text" placeholder="prénom" required>
+                    <input class="form-control" type="text" placeholder="prénom" id="first-name" required pattern="/^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/">
                 </div>
                 <div class="form-group">
                     <label for="email">email</label>
@@ -147,9 +147,9 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" rows="3"></textarea>
+                    <textarea class="form-control" rows="3" id="message"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" id="submit">envoyer</button>
+                <button type="submit" class="btn btn-dark" id="submit">envoyer</button>
             </form>
         </div>
     </section>
