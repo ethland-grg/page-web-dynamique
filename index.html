@@ -39,7 +39,7 @@
         <div class="container px-0 h-100" id="header">
             <!-- NAVBAR -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                <a class="navbar-brand font-weight-bold" href="#">LOGO</a>
+                <a class="navbar-brand font-weight-bold logo" href="#">LOGO</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -74,33 +74,32 @@
     <!---------------------- CARDS ---------------------->
     <section id="cards">
         <div class="container px-0">
-            <div class="card-group text-center">
+            <div class="card-group text-center text-md-left">
                 <div class="card rounded-0 border-0">
                     <img src="/images/card-01.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text">This is a wider card with<br />supporting text below as a<br />natural
+                            lead-in to
+                            additional.</p>
                     </div>
                 </div>
                 <div class="card rounded-0 border-0">
                     <img src="/images/card-02.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text">This is a wider card with<br />supporting text below as a<br />natural
+                            lead-in to
+                            additional.</p>
                     </div>
                 </div>
                 <div class="card rounded-0 border-0">
                     <img src="/images/card-03.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to show that equal
-                            height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text">This is a wider card with<br />supporting text below as a<br />natural
+                            lead-in to
+                            additional.</p>
                     </div>
                 </div>
             </div>
@@ -117,16 +116,16 @@
     </section>
     <!---------------------- ABOUT ---------------------->
     <section id="about" class="padding_section">
-        <div class="container text-white">
+        <div class="container text-white h-100 d-flex flex-column justify-content-center">
             <h1 class="text-white text-uppercase font-weight-bold">titre</h1>
             <p>Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit.<br />Vestibulum sit amet lectus
                 ipsum.<br />Sed maximus dictum interdum.</p>
-            <button type="button" class="btn btn-light">contactez-moi</button>
+            <button type="button" class="btn btn-light w-50">contactez-moi</button>
         </div>
     </section>
     <!---------------------- SERVICES & TESTIMONIALS ---------------------->
     <section id="service-testimonials" class="padding_section">
-        <div class="container h-100">
+        <div class="container h-100 d-md-flex">
             <div id="services">
                 <h1>services</h1>
                 <ul>
@@ -139,7 +138,7 @@
             </div>
             <div id="testimonials" class="d-flex text-center flex-column">
                 <h1 class="text-left">testimonials</h1>
-                <div id="carouselExampleCaptions"
+                <div id="slider"
                     class="carousel slide d-flex flex-column justify-content-center align-items-center h-50"
                     data-ride="carousel">
                     <div class="carousel-inner">
@@ -208,17 +207,16 @@
     </section>
     <!---------------------- CONTACT ---------------------->
     <section id="contact" class="padding_section text-white">
-        <div class="container h-100 py-3">
-            <div id="map">
+        <div class="container h-100 py-3 d-md-flex">
+            <div id="map" class="col-md-4 py-md-0">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7454.646670049451!2d55.482149327730745!3d-20.899307263104866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1605257077870!5m2!1sfr!2sfr"
-                    width="330" height="189" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    height="189" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
             </div>
-            <div id="social" class="text-center py-3">
+            <div id="social" class="text-center text-md-left py-3 col-md-4 py-md-0">
                 <h2>contact</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit. Vestibulum sit amet lectus<br />ipsum.
-                    Sed maximus dictum interdum.</p>
+                <p>Lorem ipsum dolor sit<br />adipiscing elit. Vestibulum sit amet lectus.</p>
                 <div id="social-logo">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
@@ -226,23 +224,27 @@
                     <i class="fab fa-linkedin-in"></i>
                 </div>
             </div>
-            <div id="newsletter" class="text-center py-3">
-                <h2>newsletter</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+            <div id="newsletters" class="text-center text-md-left py-3 col-md-4 py-md-0">
+                <h2>newsletters</h2>
+                <p>Lorem ipsum dolor sit.</p>
                 <div class="form-group">
                     <input type="email" class="form-control" placeholder="name@example.com">
                 </div>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-dark">subsrcibe</button>
+                <div class="text-center">
+                    <button type="button" class="btn btn-dark">subsrcibe</button>
+                </div>
             </div>
         </div>
     </section>
     <!---------------------- footer ---------------------->
     <footer class="padding_section text-center text-white">
-        <p class="m-0">Lorem ipsum dolor sit amet consectetur.</p>
-        <p>Vestibulum sit amet lectus ipsum.</p>
-        <p>Sed maximus dictum interdum.</p>
+        <div class="container d-md-flex justify-content-md-between">
+            <div>
+                <p class="m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Vestibulum sit amet lectus ipsum.</p>
+            </div>
+            <p>Sed maximus dictum interdum.</p>
+        </div>
     </footer>
 
     <!-- jQuery, Popper.js, and Bootstrap JS -->

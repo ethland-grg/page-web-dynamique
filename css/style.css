@@ -42,7 +42,7 @@ header {
     background-repeat: no-repeat;
     background-position: 90% 0%;
     background-size: cover;
-    height: 250px;
+    height: 280px;
 }
 
 #service-testimonials {
@@ -78,6 +78,11 @@ header {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
+#map iframe {
+    width: 300px;
+    height: 158px;
+}
+
 #social-logo i {
     font-size: 2em;
     padding: 0 .2em;
@@ -89,15 +94,99 @@ header {
 
 footer {
     background-image: url("/images/background-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 
 /************* MEDIA QUERIES *************/
 
-@media screen (min-width: 768px) {
+@media (min-width: 768px) {
+    header {
+        height:50vh;
+    }
 
+    #cards {
+        margin-top: -4.5em;
+    }
+    
+    #info {
+        background-color: transparent!important;
+    }
+
+    #about {
+        height: 336px;
+        padding-left: 4em;
+    }
+    
+    #about button {
+        width: 21%!important;
+    }
+
+    #service-testimonials {
+        height: 260px;
+    }
+
+    #services {
+        margin-right: 2em;
+    }
+
+    #slider {
+        height: 80%!important;
+    }
+
+    #map iframe {
+        width: 200px;
+    }
+
+    #social {
+        margin-top: -10px;
+    }
+
+    #newsletters {
+        margin-top: -12px;
+    }
+
+    #social p {
+        margin-bottom: 1em;
+    }
+
+    #newsletters p {
+        margin-bottom: .5em;
+    }
+
+    
 }
 
-@media screen (min-width: 1024px) {
-    
+@media (min-width: 1024px) {
+
+    header {
+        height:100vh;
+    }
+
+    .logo {
+        font-size: 2em;
+    }
+
+    #cards {
+        margin-top: -7em;
+    }
+
+    #about {
+        background-color: black;
+        background-position: 35% 35%;
+        background-size: initial;
+        padding-left: 10em;
+        height: 406px;
+    }
+
+    #contact {
+        height: 311px;
+    }
+
+    #map iframe {
+        width: 339px;
+        height: 210px;
+    }
+
 }
